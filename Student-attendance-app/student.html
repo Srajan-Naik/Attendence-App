@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Dashboard - Attendance System</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="student">
+    <header class="navbar">
+        <strong>Attendance System</strong>
+        <div class="navbar-right">
+            <span><span id="navName"></span> <span class="badge">student</span></span>
+            <button id="logoutBtn" class="btn btn-secondary" type="button">Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <h1>Welcome, <span id="studentName"></span></h1>
+            <p>USN: <strong id="studentUsn"></strong></p>
+            <button class="btn" type="button" disabled title="Coming in a later phase">Scan QR (coming soon)</button>
+        </section>
+
+        <h2>My subjects</h2>
+        <p id="message" class="hidden" role="status"></p>
+
+        <div class="table-wrap">
+            <table id="subjectsTable" class="hidden">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Code</th>
+                        <th>Total</th>
+                        <th>Present</th>
+                        <th>Absent</th>
+                        <th>Attendance %</th>
+                    </tr>
+                </thead>
+                <tbody id="subjectsBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

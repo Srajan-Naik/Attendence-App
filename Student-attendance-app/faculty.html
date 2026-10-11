@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Faculty Dashboard - Attendance System</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="faculty">
+    <header class="navbar">
+        <strong>Attendance System</strong>
+        <div class="navbar-right">
+            <span><span id="navName"></span> <span id="navRole" class="badge"></span></span>
+            <button id="logoutBtn" class="btn btn-secondary" type="button">Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <h1>Faculty Dashboard</h1>
+            <p>Signed in as <span id="facultyName"></span></p>
+            <button class="btn" type="button" disabled title="Coming in a later phase">Create subject (coming
+                soon)</button>
+        </section>
+
+        <h2>My subjects</h2>
+        <p id="message" class="hidden" role="status"></p>
+        <div id="subjectsGrid" class="grid"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register - Attendance System</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="register">
+    <header class="navbar"><strong>Attendance System</strong></header>
+
+    <main class="auth-page">
+        <form id="registerForm" class="card form" novalidate>
+            <h1>Student Registration</h1>
+
+            <p id="message" class="error hidden" role="alert"></p>
+
+            <label for="name">Full name</label>
+            <input id="name" name="name" autocomplete="name" required />
+
+            <label for="usn">USN</label>
+            <input id="usn" name="usn" required />
+
+            <label for="email">College email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" required />
+
+            <label for="confirmPassword">Confirm password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required />
+
+            <button id="submitBtn" class="btn" type="submit">Register</button>
+
+            <p>Already registered? <a href="index.html">Login</a></p>
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Attendance System</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="login">
+    <header class="navbar"><strong>Attendance System</strong></header>
+
+    <main class="auth-page">
+        <form id="loginForm" class="card form" novalidate>
+            <h1>Login</h1>
+
+            <p id="message" class="error hidden" role="alert"></p>
+
+            <label for="identifier">USN or email</label>
+            <input id="identifier" name="identifier" autocomplete="username" required />
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+
+            <button id="submitBtn" class="btn" type="submit">Login</button>
+
+            <p>New student? <a href="register.html">Create an account</a></p>
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
